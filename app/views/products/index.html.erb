@@ -10,7 +10,7 @@
 		
 		<td width="60%">
 			<span class="list-title"><%=h product.title %></span><br />
-			<%=h truncate(product.description.gsub(/<.*?>/,''), 80)%>
+			<%=h truncate(product.description.gsub(/<.*?>/,''), :length => 80)%>
 		</td>
 		
 		<td class="list-actions">
